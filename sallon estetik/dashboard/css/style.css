@@ -1,0 +1,198 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            padding: 2rem 1.5rem;
+            background: #fdf8f6;
+            display: flex;
+            min-height: 100vh;
+            color: #1e293b;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: #bdcde3;
+            padding: 2rem 1.5rem;
+            border-radius: 0 32px 32px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 2.5rem;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .logo i { color: #d9b9af; font-size: 1.8rem; }
+
+        .menu li {
+    padding: 0;             
+}
+
+.menu li a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 20px;        
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+        .menu li i { width: 24px; text-align: center; }
+        .menu li.active {
+            background: #e4e9ef;
+            color: white;
+            border-left: 4px solid #e8b4bc;
+        }
+        .menu li:not(.active):hover {
+            background: rgba(255,255,255,0.04);
+            color: white;
+        }
+
+        .main {
+            flex: 1;
+            padding: 2rem 2.5rem;
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .top h1 {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        .top p {
+            color: #64748b;
+            margin-top: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .date {
+            background: white;
+            padding: 0.6rem 1.4rem;
+            border-radius: 40px;
+            font-weight: 500;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.8rem;
+            margin-bottom: 2.5rem;
+        }
+        .card {
+            background: white;
+            padding: 1.8rem 1.5rem;
+            border-radius: 24px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            transition: 0.25s;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 30px rgba(0,0,0,0.05);
+        }
+        .card h3 {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        .number {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+        .icon {
+            background: #f8e9ec;
+            padding: 0.8rem;
+            border-radius: 18px;
+            color: #b27a6b;
+            font-size: 1.6rem;
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.8rem;
+        }
+        .col {
+            background: white;
+            border-radius: 24px;
+            padding: 1.8rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+        }
+        .col h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 1.2rem;
+        }
+
+        /* mini chart */
+        .bars {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            height: 100px;
+            background: linear-gradient(145deg, #faf0f2, #f5e6e9);
+            border-radius: 18px;
+            padding: 1rem;
+        }
+        .bar {
+            width: 40px;
+            background: #e8b4bc;
+            border-radius: 12px 12px 8px 8px;
+            height: 48px; /* will be overwritten by inline style for demo */
+        }
+        .bar-label {
+            font-size: 0.7rem;
+            color: #64748b;
+            text-align: center;
+            margin-top: 6px;
+        }
+
+        /* reservation list */
+        .list {
+            list-style: none;
+        }
+        .list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .list li:last-child { border-bottom: none; }
+        .name i { margin-right: 8px; color: #b47c84; }
+        .time {
+            background: #f1f5f9;
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+    }
