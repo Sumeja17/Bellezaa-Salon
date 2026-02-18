@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belleza Admin · Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="icon" type="image/png" href="images/favicon.png" />
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <i class="fas fa-spa"></i>
+            Belleza<span style="font-weight:300;">Admin</span>
+        </div>
+        <ul class="menu">
+            <li class="active"><a href="index.html"></a><i class="fas fa-chart-pie"></i> Overview</li>
+            <li><a href="services2.html"></a><i class="fas fa-spa"></i> Esthetic Services</li>
+            <li><a href="consults.html"></a><i class="fas fa-calendar-check"></i> Consults</li>
+            <li><a href="reservations.html"></a><i class="fas fa-clock"></i> Reservations</li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="top">
+            <div>
+                <h1>Dashboard Overview</h1>
+                <p><i class="fas fa-calendar-alt" style="color:#e8b4bc;"></i> Your daily snapshot</p>
+            </div>
+            <div class="date">
+                <i class="fas fa-calendar"></i>
+                <span id="currentDate"></span>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div>
+                    <h3>Today's Appointment</h3>
+                    <div class="number">5</div>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-calendar-day"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h3>Today's Reservations</h3>
+                    <div class="number">38</div>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h3>Total Services</h3>
+                    <div class="number">15</div>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-spa"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h2><i class="fas fa-chart-line" style="color:#e8b4bc;"></i> Weekly activity</h2>
+                <div class="bars">
+                    <div style="display:flex; flex-direction:column; align-items:center;">
+                        <div class="bar" style="height:48px;"></div>
+                        <span class="bar-label">M</span>
+                    </div>
+                    <div style="display:flex; flex-direction:column; align-items:center;">
+                        <div class="bar" style="height:64px; background:#cba3aa;"></div>
+                        <span class="bar-label">T</span>
+                    </div>
+                    <div style="display:flex; flex-direction:column; align-items:center;">
+                        <div class="bar" style="height:32px;"></div>
+                        <span class="bar-label">W</span>
+                    </div>
+                    <div style="display:flex; flex-direction:column; align-items:center;">
+                        <div class="bar" style="height:56px; background:#cba3aa;"></div>
+                        <span class="bar-label">T</span>
+                    </div>
+                    <div style="display:flex; flex-direction:column; align-items:center;">
+                        <div class="bar" style="height:70px;"></div>
+                        <span class="bar-label">F</span>
+                    </div>
+                    <div style="display:flex; flex-direction:column; align-items:center;">
+                        <div class="bar" style="height:44px; background:#cba3aa;"></div>
+                        <span class="bar-label">S</span>
+                    </div>
+                </div>
+                <p style="color:#64748b; margin-top:1rem; font-size:0.9rem;">
+                    <i class="fas fa-circle" style="color:#e8b4bc; font-size:0.6rem;"></i> Appointments this week
+                </p>
+            </div>
+
+            <div class="col">
+                <h2><i class="fas fa-clock" style="color:#e8b4bc;"></i> Upcoming today</h2>
+                <ul class="list">
+                    <li>
+                        <span class="name"><i class="fas fa-user"></i> Olivia Chen</span>
+                        <span class="time">14:30</span>
+                    </li>
+                    <li>
+                        <span class="name"><i class="fas fa-user"></i> Maria Garcia</span>
+                        <span class="time">15:45</span>
+                    </li>
+                    <li>
+                        <span class="name"><i class="fas fa-user"></i> Emma Williams</span>
+                        <span class="time">17:00</span>
+                    </li>
+                    <li>
+                        <span class="name"><i class="fas fa-user"></i> Sophia Lee</span>
+                        <span class="time">18:15</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
