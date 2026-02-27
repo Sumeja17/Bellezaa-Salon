@@ -34,7 +34,6 @@ body {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url('images/about-bg.jpg');
     background-size: cover;
     background-position: center;
     filter: saturate(.9) brightness(.9);
@@ -336,4 +335,5 @@ footer {
         color: var(--accent);
         font-size: 1rem;
     }
+
 }
